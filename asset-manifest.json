@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/suryasreenidhi9192/demo-app.git/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/suryasreenidhi9192/demo-app.git/static/js/main.f7b5819c.chunk.js",
+    "main.js.map": "/suryasreenidhi9192/demo-app.git/static/js/main.f7b5819c.chunk.js.map",
+    "runtime-main.js": "/suryasreenidhi9192/demo-app.git/static/js/runtime-main.d4a7a920.js",
+    "runtime-main.js.map": "/suryasreenidhi9192/demo-app.git/static/js/runtime-main.d4a7a920.js.map",
+    "static/js/2.085bc728.chunk.js": "/suryasreenidhi9192/demo-app.git/static/js/2.085bc728.chunk.js",
+    "static/js/2.085bc728.chunk.js.map": "/suryasreenidhi9192/demo-app.git/static/js/2.085bc728.chunk.js.map",
+    "static/js/3.dceb483a.chunk.js": "/suryasreenidhi9192/demo-app.git/static/js/3.dceb483a.chunk.js",
+    "static/js/3.dceb483a.chunk.js.map": "/suryasreenidhi9192/demo-app.git/static/js/3.dceb483a.chunk.js.map",
+    "index.html": "/suryasreenidhi9192/demo-app.git/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/suryasreenidhi9192/demo-app.git/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.085bc728.chunk.js.LICENSE.txt": "/suryasreenidhi9192/demo-app.git/static/js/2.085bc728.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/suryasreenidhi9192/demo-app.git/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4a7a920.js",
+    "static/js/2.085bc728.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.f7b5819c.chunk.js"
+  ]
+}
