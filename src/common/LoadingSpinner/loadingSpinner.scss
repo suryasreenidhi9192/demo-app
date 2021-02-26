@@ -1,0 +1,26 @@
+// Loading Lockout Animations
+.loading-lockout {
+  background-color: gray;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  opacity: .7;
+
+  .settings-icon {
+    font-size: 300px;
+    top: 160px;
+    left: calc(50% - 150px);
+    position: absolute;
+    animation: rotating 3s linear infinite;
+  }
+  // fade in/out animations
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;
+}
+
+@keyframes rotating {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
