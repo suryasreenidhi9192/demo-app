@@ -1,0 +1,50 @@
+@import "../../shared/css/variables";
+
+.pie-chart {
+    width: 180px;
+    height: 180px;
+    transform: rotate(-90deg);
+
+    .background {
+        fill: var(--content-background);
+    }
+
+    .slice {
+        stroke: var(--content-background);
+        stroke-width: 0.01;
+        cursor: crosshair;
+
+        &.is-inactive {
+            opacity: 0.25;
+        }
+    }
+
+    &[type=donut] {
+
+        .slice {
+            stroke: var(--content-background);
+            stroke-width: 0.01;
+        }
+
+        .donut-hole {
+            fill: var(--content-background);
+        }
+
+        .donut-info {
+            transform: rotate(90deg);
+
+            .donut-value {
+                fill: var(--text);
+                font-size: 0.265px;
+                text-anchor: middle;
+            }
+
+            .donut-label {
+                fill: var(--text-muted);
+                font-size: 0.165px;
+                font-family: $med;
+                text-anchor: middle;
+            }
+        }
+    }
+}

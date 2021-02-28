@@ -1,0 +1,84 @@
+@import "../../../shared/css/variables";
+
+.table .table-body {
+
+    tr {
+
+        &.new-group:not(:first-child) > td {
+            border-top: 2px solid rgba(0, 0, 0, 0.25);
+        }
+
+        &:hover > td {
+            background-color: var(--action-alt-highlight);
+            color: var(--text);
+        }
+
+        &.is-clickable {
+
+            &:hover > td {
+                background-color: var(--action-highlight);
+                color: var(--text);
+            }
+
+            > td {
+                cursor: pointer;
+            }
+        }
+
+        &:last-child > td {
+            padding-bottom: 48px;
+            border-bottom: none;
+        }
+
+        td {
+            vertical-align: top;
+            height: 24px;
+            padding: 12px 16px;
+            font-family: $reg;
+            color: var(--text-muted);
+            background-color: var(--content-background);
+            border-bottom: var(--border);
+            border-right: var(--border);
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &.sorted-column {
+                color: var(--text);
+            }
+
+            &.code,
+            &.date,
+            &.string-numeric {
+                text-align: center;
+            }
+
+            &.currency,
+            &.number {
+                text-align: right;
+
+                &.negative {
+                    color: var(--utility-red);
+                }
+            }
+
+            &.hyperlink {
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            &.long-string {
+                min-width: 180px;
+                font-size: 15px;
+            }
+
+            a {
+                display: inline-block;
+                margin: -8px;
+                padding: 8px;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../../shared/css/variables";
+
+.form-field {
+
+    .label-row {
+
+        .redux-form-hint {
+
+            cursor: pointer;
+
+            .hint-icon {
+                width: 20px; height: 20px;
+                position: absolute; top: -2px; right: 8px;
+                fill: var(--utility-blue);
+                cursor: pointer;
+            }
+
+            .hint-link {
+                font-family: $reg; font-size: 13px; color: var(--action); text-decoration: underline;
+                margin-right: 8px;
+                cursor: pointer;
+                &:hover   { color: var(--text); }
+            }
+
+            .hint-text {
+                z-index: 9999;
+                position: absolute; top: 20px; right: 16px;
+                font-family: $reg; font-size: 14px; color: var(--text-muted);
+                padding: 16px;
+                border: 1px solid var(--utility-amber);  border-top: 4px solid var(--utility-amber);
+                background-color: white; box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            }
+
+            &.open {
+                .hint-text { display: inline-block; }
+            }
+
+        }
+
+    }
+
+}
+

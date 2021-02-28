@@ -1,0 +1,123 @@
+@import "../../shared/css/variables";
+
+.chart-with-legend {
+    padding-top: 24px;
+
+    &[data-type=donut] {
+
+        .pie-chart {
+            display: inline-block;
+            vertical-align: top;
+            width: 180px;
+        }
+
+        .legend.inline {
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+            padding-left: 24px;
+            width: calc(100% - 180px);
+        }
+    }
+
+    &[data-type=line] {
+
+        .line-chart { margin-bottom: 16px; }
+
+        .data-line {
+            cursor: crosshair;
+        }
+    }
+
+    .legend {
+        .item-0 .color { background-color: $chart-color-0 };
+        .item-1 .color { background-color: $chart-color-1 };
+        .item-2 .color { background-color: $chart-color-2 };
+        .item-3 .color { background-color: $chart-color-3 };
+        .item-4 .color { background-color: $chart-color-4 };
+        .item-5 .color { background-color: $chart-color-5 };
+        .item-6 .color { background-color: $chart-color-6 };
+        .item-7 .color { background-color: $chart-color-7 };
+        .item-8 .color { background-color: $chart-color-8 };
+        .item-9 .color { background-color: $chart-color-9 };
+        .item-10 .color { background-color: $chart-color-10 };
+        .item-11 .color { background-color: $chart-color-11 };
+        .item-12 .color { background-color: $chart-color-12 };
+        .item-13 .color { background-color: $chart-color-13 };
+        .item-14 .color { background-color: $chart-color-14 };
+        .item-15 .color { background-color: $chart-color-15 };
+        .item-16 .color { background-color: $chart-color-16 };
+        .item-17 .color { background-color: $chart-color-17 };
+        .item-18 .color { background-color: $chart-color-18 };
+        .item-19 .color { background-color: $chart-color-19 };
+    }
+
+    .pie-chart {
+        .slice-0 { fill: $chart-color-0 };
+        .slice-1 { fill: $chart-color-1 };
+        .slice-2 { fill: $chart-color-2 };
+        .slice-3 { fill: $chart-color-3 };
+        .slice-4 { fill: $chart-color-4 };
+        .slice-5 { fill: $chart-color-5 };
+        .slice-6 { fill: $chart-color-6 };
+        .slice-7 { fill: $chart-color-7 };
+        .slice-8 { fill: $chart-color-8 };
+        .slice-9 { fill: $chart-color-9 };
+        .slice-10 { fill: $chart-color-10 };
+        .slice-11 { fill: $chart-color-11 };
+        .slice-12 { fill: $chart-color-12 };
+        .slice-13 { fill: $chart-color-13 };
+        .slice-14 { fill: $chart-color-14 };
+        .slice-15 { fill: $chart-color-15 };
+        .slice-16 { fill: $chart-color-16 };
+        .slice-17 { fill: $chart-color-17 };
+        .slice-18 { fill: $chart-color-18 };
+        .slice-19 { fill: $chart-color-19 };
+    }
+
+    .line-chart {
+        .line-0 .line { stroke: $chart-color-0 };
+        .line-1 .line { stroke: $chart-color-1 };
+        .line-2 .line { stroke: $chart-color-2 };
+        .line-3 .line { stroke: $chart-color-3 };
+        .line-4 .line { stroke: $chart-color-4 };
+        .line-5 .line { stroke: $chart-color-5 };
+        .line-6 .line { stroke: $chart-color-6 };
+        .line-7 .line { stroke: $chart-color-7 };
+        .line-8 .line { stroke: $chart-color-8 };
+        .line-9 .line { stroke: $chart-color-9 };
+        .line-10 .line { stroke: $chart-color-10 };
+        .line-11 .line { stroke: $chart-color-11 };
+        .line-12 .line { stroke: $chart-color-12 };
+        .line-13 .line { stroke: $chart-color-13 };
+        .line-14 .line { stroke: $chart-color-14 };
+        .line-15 .line { stroke: $chart-color-15 };
+        .line-16 .line { stroke: $chart-color-16 };
+        .line-17 .line { stroke: $chart-color-17 };
+        .line-18 .line { stroke: $chart-color-18 };
+        .line-19 .line { stroke: $chart-color-19 };
+    }
+
+    .line-chart {
+        .line-0 .data-point-selector .data-point { fill: $chart-color-0 };
+        .line-1 .data-point-selector .data-point { fill: $chart-color-1 };
+        .line-2 .data-point-selector .data-point { fill: $chart-color-2 };
+        .line-3 .data-point-selector .data-point { fill: $chart-color-3 };
+        .line-4 .data-point-selector .data-point { fill: $chart-color-4 };
+        .line-5 .data-point-selector .data-point { fill: $chart-color-5 };
+        .line-6 .data-point-selector .data-point { fill: $chart-color-6 };
+        .line-7 .data-point-selector .data-point { fill: $chart-color-7 };
+        .line-8 .data-point-selector .data-point { fill: $chart-color-8 };
+        .line-9 .data-point-selector .data-point { fill: $chart-color-9 };
+        .line-10 .data-point-selector .data-point { fill: $chart-color-10 };
+        .line-11 .data-point-selector .data-point { fill: $chart-color-11 };
+        .line-12 .data-point-selector .data-point { fill: $chart-color-12 };
+        .line-13 .data-point-selector .data-point { fill: $chart-color-13 };
+        .line-14 .data-point-selector .data-point { fill: $chart-color-14 };
+        .line-15 .data-point-selector .data-point { fill: $chart-color-15 };
+        .line-16 .data-point-selector .data-point { fill: $chart-color-16 };
+        .line-17 .data-point-selector .data-point { fill: $chart-color-17 };
+        .line-18 .data-point-selector .data-point { fill: $chart-color-18 };
+        .line-19 .data-point-selector .data-point { fill: $chart-color-19 };
+    }
+}

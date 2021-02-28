@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button:.......................SnapShot Testing: Button Matches jest snapshot 1`] = `
+<button
+  className="form-button button normal primary "
+  onClick={[Function]}
+  type="submit"
+>
+  <span>
+    Click Here, Ron ;)
+  </span>
+</button>
+`;
+
+exports[`Button:.......................SnapShot Testing: Disabled Button Matches jest snapshot 1`] = `
+<button
+  className="form-button button normal primary disabled"
+  disabled="disabled"
+  onClick={[Function]}
+  type="submit"
+>
+  <span>
+    Click Here, Ron ;)
+  </span>
+</button>
+`;

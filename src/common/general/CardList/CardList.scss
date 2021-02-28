@@ -1,0 +1,30 @@
+@import "../../shared/css/variables";
+
+.card-list {
+
+    display: flex; flex-wrap: wrap;
+    margin-left: -16px; margin-top: -16px;
+
+    .card {
+
+        flex: 1 1 auto;
+        width: 300px;
+        margin-left: 16px; margin-top: 16px;
+        border: var(--border);
+
+        &.empty-card {
+            border-color: transparent;
+        }
+
+        .header {
+            font-size: 18px; color: var(--text-muted);
+            padding:16px;
+            border-bottom: var(--border);
+            color: var(--text);
+        }
+
+        .body { padding:16px; font-size:14px; }
+
+    }
+
+}

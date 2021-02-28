@@ -1,0 +1,93 @@
+@import "../../shared/css/variables";
+
+.accordion {
+
+    width: 100%;
+    background: var(--content-background);
+    border: var(--border);
+    box-shadow: var(--box-shadow-near);
+    transition: box-shadow 0.3s;
+
+    .title {
+
+        box-sizing: border-box;
+        padding: 16px;
+        display: flex;
+        width: 100%;
+        line-height: normal;
+        cursor: pointer;
+        user-select: none;
+
+        .text {
+            flex: 1 1 auto;
+            font-family: $lt;
+            font-size: 24px;
+            color: var(--text);
+        }
+
+        .accordion-icon {
+            flex: 0 0 24px;
+
+            .plus-minus-icon {
+
+                position: relative; top: 50%; left: 25%;
+
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 16px;
+                    height: 2px;
+                    background: var(--action-alt);
+                }
+
+                &::before {
+                    transform: rotate(-90deg);
+                    transition: transform 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+                }
+
+            }
+        }
+
+        &:hover {
+            .accordion-icon .plus-minus-icon {
+                &::after, &::before {
+                    background-color: var(--action-alt-hover)
+                }
+            }
+        }
+
+        &:active .accordion-icon .plus-minus-icon {
+            &::after, &::before {
+                background-color: var(--action-alt-active)
+            }
+        }
+
+    }
+
+    .content {
+        padding: 0 16px 16px;
+        display: none;
+    }
+
+    &:not(.open) {
+        &:hover {
+            box-shadow: var(--box-shadow-far);
+        }
+
+        &:active {
+            box-shadow: var(--box-shadow-none);
+            transition: box-shadow 0.05s;
+        }
+    }
+
+    &.open {
+
+        .accordion-icon .plus-minus-icon::before { transform: rotate(0deg); }
+
+        .content { display: block; }
+
+    }
+
+}

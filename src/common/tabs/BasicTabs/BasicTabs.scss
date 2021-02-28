@@ -1,0 +1,61 @@
+@import "../../shared/css/variables";
+
+.tabs {
+
+    width: auto;
+
+    &.is-disabled {
+        pointer-events: none;
+
+        .tab-labels > a {
+            opacity: 0.5;
+        }
+    }
+
+    .tab-labels {
+
+        display: flex;
+        border-bottom: var(--border);
+
+        .tab-label {
+
+            flex: 0 0 auto;
+            font-family: $med;
+            font-size: 15px;
+            color: var(--action-alt);
+            text-align: center;
+            padding: 24px 32px;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                border-color: var(--action-alt-hover);
+                color: var(--action-alt-hover);
+            }
+
+            &:active {
+                border-color: var(--action-alt-active);
+                color: var(--action-alt-active);
+            }
+
+            &.selected {
+                border-color: var(--action);
+                color: var(--action);
+            }
+
+        }
+
+    }
+
+    .is-loading {
+        padding: 0 !important;
+
+        .loader-inline {
+            position: relative;
+            padding: 24px 0;
+        }
+    }
+
+}
+

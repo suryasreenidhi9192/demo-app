@@ -1,0 +1,29 @@
+@import "../../shared/css/variables";
+
+.list-horizontal {
+
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    margin-top: -16px;
+
+    > li {
+
+        flex: 1 1 auto;
+        padding-left: 16px; margin-top: 16px;
+
+        @media only screen and (max-width: 800px) {
+            width: calc(50% - 16px);
+        }
+
+        @media only screen and (max-width: 480px) {
+            width: 100%;
+        }
+
+        > dl > dt {
+            font-family: $med; font-size: 14px; text-transform: capitalize;
+            margin-bottom: 4px;
+        }
+
+    }
+
+}
+

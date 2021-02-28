@@ -1,0 +1,28 @@
+@import "../../shared/css/variables";
+
+.external-link {
+
+    display: inline-flex; flex-direction: row-reverse;
+    cursor: pointer;
+
+    &.before {
+        flex-direction: row;
+    }
+
+    &:hover, &:focus {
+        color: var(--text);
+        .external-link-icon { fill: var(--text); }
+    }
+
+    li {
+        margin-right: 8px; order: 1;
+        svg { position: relative; bottom: -1px;}
+    }
+
+    .external-link-icon {
+        order: 2;
+        width: 1em; height: 1em;
+        fill: var(--action);
+    }
+
+}

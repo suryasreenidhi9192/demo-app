@@ -1,0 +1,14 @@
+@import "../../../shared/css/variables";
+
+.textarea {
+
+    &.err {
+
+        textarea {
+            color: var(--utility-red);
+            border-color: var(--utility-red);
+        }
+
+    }
+
+}

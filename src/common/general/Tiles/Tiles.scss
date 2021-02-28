@@ -1,0 +1,82 @@
+@import "../../shared/css/variables/index";
+
+.tiles {
+
+    display: flex; flex-wrap: wrap; flex-direction: row;
+    padding-top: 8px; margin-left: -16px;
+
+    .tile {
+        position: relative;
+        flex: 1 1 0;
+        margin-top: 16px; margin-left: 16px;
+        min-width: 300px;
+        background-color: var(--content-background);
+        border: var(--border);
+        box-shadow: var(--box-shadow-near);
+        border-radius: 4px;
+        transition: box-shadow 0.3s;
+
+        .tile-layout {
+
+            .title {
+                display: flex; align-items: flex-end; justify-content: space-between;
+                padding: 16px;
+                font-size: 20px;
+                overflow-wrap: break-word; word-break: break-word; -ms-word-break: break-all;
+                h3 { line-height: normal; }
+                a { font-size: 16px; }
+            }
+
+            .subTitle {
+                padding: 0px 16px 16px 16px;
+                font-size: 14px; color: var(--text-muted);
+            }
+
+            .content {
+                padding: 0 16px 16px 16px;
+            }
+
+
+        }
+
+        .tile-loader {
+            font-family: $lt; font-size: 16px;
+            text-align: center; color: var(--text);
+            width: 100%;
+            padding-top: 100px;
+        }
+
+        &.column {
+            flex-direction: column;
+            > li { margin-right: 0; }
+        }
+
+        &.empty-item {
+            background-color: transparent;
+            padding-top: 0; padding-bottom: 0;
+            border: none;
+            box-shadow: none;
+        }
+
+        &.hollow {
+            box-shadow: var(--box-shadow-none);
+        }
+
+        &.is-clickable {
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: var(--box-shadow-far);
+                transition: box-shadow 0.3s;
+            }
+
+            &:active {
+                box-shadow: var(--box-shadow-none);
+                transition: box-shadow 0.05s;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,9 @@
+@import "../../../shared/css/variables";
+
+.table .table-alert {
+    td {
+        padding: 0 16px;
+        color: var(--text);
+        background-color: var(--content-background);
+    }
+}

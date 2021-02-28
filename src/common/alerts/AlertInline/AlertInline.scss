@@ -1,0 +1,33 @@
+@import "../../shared/css/variables";
+
+.alert-inline {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    width: auto;
+    padding: 16px;
+    background-color: var(--content-background);
+    border: 1px solid;
+    border-radius: 6px;
+
+    svg {
+        flex: 0 0 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &.success { border-color: var(--utility-green); }
+    &.error { border-color: var(--utility-red); }
+    &.warning { border-color: var(--utility-amber); }
+    &.info { border-color: var(--utility-blue); }
+
+    .message {
+        flex: 1 1 auto;
+        font-family: $lt;
+        font-size: 16px;
+        display: inline-block;
+        margin: 0 16px;
+    }
+
+}
+

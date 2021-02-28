@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnchorButton:.......................SnapShot Testing: Default AnchorButton Matches jest snapshot 1`] = `
+<a
+  className="anchor-button  "
+  href="#"
+  onClick={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <span>
+    Click Here, Ron ;)
+  </span>
+</a>
+`;
+
+exports[`AnchorButton:.......................SnapShot Testing: Disabled AnchorButton Matches jest snapshot 1`] = `
+<a
+  className="anchor-button disabled "
+  disabled="disabled"
+  href="#"
+  onClick={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <span>
+    Click Here, Ron ;)
+  </span>
+</a>
+`;
+
+exports[`AnchorButton:.......................SnapShot Testing: Underlined AnchorButton Matches jest snapshot 1`] = `
+<a
+  className="anchor-button  underline"
+  href="#"
+  onClick={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <span>
+    Click Here, Ron ;)
+  </span>
+</a>
+`;

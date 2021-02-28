@@ -1,0 +1,30 @@
+@import "../../../shared/css/variables";
+
+.react-datepicker-wrapper { display: inherit; }
+.react-datepicker__input-container { display: inherit; }
+
+.input-date {
+
+    position: relative;
+
+    &.err {
+
+        input {
+            border-color: var(--utility-red);
+        }
+        .input-error-icon {
+            position:absolute; top:36px; right: 16px;
+            width: 24px;
+            fill: var(--utility-red);
+            cursor: pointer;
+        }
+        .message {
+            font-family: $reg; font-size: 14px; color: var(--utility-red);
+            width: auto;
+            margin-top: 8px;
+            text-align: right;
+        }
+
+    }
+
+}

@@ -1,0 +1,37 @@
+@import "../../../shared/css/variables";
+
+.select {
+
+    position: relative;
+
+    .select-caret-icon {
+        position:absolute; bottom:0.8rem; right: 16px;
+        width: 28px;
+        fill: var(--action-alt);
+        cursor: pointer;
+        pointer-events: none;
+        height: 24px;
+    }
+
+    &.err {
+
+        select {
+            border-color: var(--utility-red);
+        }
+        .select-error-icon {
+            position:absolute; top:36px; right: 50px;
+            width: 24px;
+            fill: var(--utility-red);
+            cursor: pointer;
+        }
+        .message {
+            font-family: $reg; font-size: 14px; color: var(--utility-red);
+            width: auto;
+            margin-top: 8px;
+            text-align: right;
+        }
+
+    }
+
+}
+

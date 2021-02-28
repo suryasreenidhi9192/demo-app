@@ -1,0 +1,66 @@
+@import "../../../shared/css/variables";
+
+.table .table-header {
+
+    th {
+        position: sticky;
+        top: 0;
+        vertical-align: bottom;
+        margin-top: -2px;
+        padding: 16px;
+        min-width: 48px;
+        font-size: 14px;
+        background-color: var(--content-header-background);
+        border-bottom: var(--border);
+        border-right: var(--border);
+
+        &:last-child {
+            border-right: none;
+        }
+
+        .heading {
+            position: relative;
+            margin: -16px;
+            width: 100%;
+            padding: 32px 16px 16px;
+            user-select: none;
+
+            &.is-sortable {
+                cursor: pointer;
+
+                > svg {
+                    position: absolute;
+                    right: 10px;
+                    width: 24px;
+                    height: 24px;
+                    fill: var(--text-faint);
+                    pointer-events: none;
+                }
+
+                .sort-arrow-asc {
+                    bottom: 20px;
+                    transform: scaleY(-1);
+                }
+
+                .sort-arrow-desc {
+                    bottom: 10px;
+                }
+
+                &.sort-asc > .sort-arrow-asc,
+                &.sort-desc > .sort-arrow-desc {
+                    fill: var(--action);
+                }
+
+                &:hover > svg {
+                    fill: var(--action-alt-hover);
+                }
+            }
+
+            .label {
+                padding-right: 24px;
+                font-family: $med;
+                white-space: nowrap;
+            }
+        }
+    }
+}

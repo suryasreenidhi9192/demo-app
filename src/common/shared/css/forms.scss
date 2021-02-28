@@ -1,0 +1,160 @@
+@import "variables/index";
+
+.form {
+
+    display: inline;
+    margin: 0; padding: 0;
+
+    textarea, input, select {
+        font-size: 14px;
+        color: var(--text);
+        background-color: var(--input-background);
+        border: var(--input-border); border-radius: 4px;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        transition: background-color 0.3s, border-color 0.3s;
+
+       &:focus,  &:hover {
+            background-color: var(--input-background-hover);
+            border: var(--input-border-hover);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+    }
+
+    input, select {
+        height: 48px; width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        line-height: 16px;
+        padding: 16px;
+        resize: none;
+        outline: 0 none;
+
+        &[disabled]{
+            opacity: .5;
+            cursor: not-allowed !important;
+            user-select: none;
+        }
+
+    }
+
+    input {
+
+        &[type="text"],
+        &[type="tel"],
+        &[type="url"],
+        &[type="time"],
+        &[type="email"],
+        &[type="password"],
+        &[type="date"],
+        &[type="number"],
+        &[type="search"] {
+            font-size: 14px;
+            padding-left: 16px;
+            -webkit-appearance: none;
+        }
+
+        /* for ipad keyboard go button */
+        &[type="submit"] {
+            visibility: hidden;
+        }
+
+        &[type=text]::-ms-clear,
+        &[type=password]::-ms-reveal {
+            display: none;
+        }
+
+        &:focus,
+        &[readonly]:focus {
+            outline: 0 none;
+        }
+
+        &[readonly] {
+            border: var(--input-border-hover);
+            cursor: none;
+        }
+
+        &[disabled]{
+            opacity: .5;
+            cursor: not-allowed !important;
+            user-select: none;
+        }
+
+        &[type="checkbox"] {
+            -webkit-appearance: checkbox !important;
+            border-radius: 0;
+        }
+
+        &[type="radio"] {
+            -webkit-appearance: radio !important;
+            border-radius: 0;
+        }
+
+        &[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        &::-webkit-clear-button,
+        &::-webkit-inner-spin-button,
+        &::-webkit-calendar-picker-indicator {
+            display: none !important;
+            -webkit-appearance: none !important;
+        }
+    }
+
+    select {
+        padding-right: 40px; padding-left: 16px;
+        cursor: pointer;
+
+        /*Removes default chrome and safari style*/
+        -webkit-appearance: none;
+        /* Removes Default Firefox style*/
+        -moz-appearance: none;
+
+        /* Removes default arrow from firefox*/
+        text-indent: 0.01px;
+        /*Removes default arrow from firefox*/
+        text-overflow: "";
+
+        &:disabled { background-image: none; }
+
+        &:hover {
+            border: var(--input-border-hover);
+            outline: 0 none;
+        }
+
+        &[disabled] {
+            opacity: .5;
+            cursor: not-allowed !important;
+            user-select: none;
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        &:-moz-focusring { color: transparent; text-shadow: 0 0 0 #000; }
+
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    label {
+        width: 100%;
+        .description {
+            font-family: $med; font-size: 14px; line-height: 16px; color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+    }
+
+    fieldset {
+        display: block;
+        border: 0; padding: 0; margin: 0;
+    }
+
+}
+

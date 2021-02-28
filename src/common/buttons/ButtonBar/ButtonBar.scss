@@ -1,0 +1,33 @@
+@import "../../shared/css/variables";
+
+.btn-toolbar {
+
+    &.justify-buttons {
+        display: flex;
+        @media only screen and (max-width: 560px) {
+            display: block;
+        }
+        button { width: 220px; }
+    }
+
+    &.justify-left { justify-content: flex-start; }
+    &.justify-right { justify-content: flex-end; }
+
+    .buttons {
+        display: flex; flex-direction: row; flex-wrap: wrap;
+        margin-left: -16px; margin-top: -16px;
+        > li {
+            flex: 1 0 auto;
+            margin-left: 16px; margin-top: 16px;
+            @media only screen and (max-width: 520px) {
+                flex: 0 1 100%;
+            }
+            button {
+                @media only screen and (max-width: 520px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

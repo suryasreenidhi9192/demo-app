@@ -1,0 +1,23 @@
+@import "../../../shared/css/variables";
+
+.form-field {
+
+    .label-row {
+
+        .redux-form-lookup {
+
+            cursor: pointer;
+
+            .form-lookup-link {
+                font-family: $reg; font-size: 13px; color: var(--action); text-decoration: underline;
+                margin-right: 8px;
+                cursor: pointer;
+                &:hover   { color: var(--text); }
+            }
+
+        }
+
+    }
+
+}
+
