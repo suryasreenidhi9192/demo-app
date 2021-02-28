@@ -1,0 +1,13 @@
+@import "../../shared/css/variables";
+
+.sub-menu-container {
+
+    display: flex; justify-content: flex-start; flex-wrap: wrap;
+
+    .sub-menu-item {
+
+        flex: 0 1 auto;
+        .action { padding-right: 32px; }
+
+    }
+}

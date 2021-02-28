@@ -1,0 +1,79 @@
+@import "../../../../shared/css/variables";
+
+.table .table-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding-top: 16px;
+    font-size: 14px;
+
+    &.input-filter > input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 36px;
+        padding: 0 16px;
+        color: var(--text);
+        background-color: var(--input-background);
+        border: var(--input-border);
+        border-radius: 4px;
+        outline: none;
+        transition: background-color 0.3s, border-color 0.3s;
+
+        &:focus, &:hover {
+            background-color: var(--input-background-hover);
+            border: var(--input-border-hover);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+    }
+
+    &.select-filter {
+        position: relative;
+        width: 100%;
+        min-width: 96px;
+
+        select {
+            box-sizing: border-box;
+            width: 100%;
+            height: 36px;
+            padding: 0 40px 0 16px;
+            color: var(--text);
+            background-color: var(--input-background);
+            border: var(--input-border);
+            border-radius: 4px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            outline: none;
+            transition: background-color 0.3s, border-color 0.3s;
+
+            &:-moz-focusring {
+                color: transparent;
+                text-shadow: 0 0 0 var(--action-alt-hover);
+            }
+
+            &::-ms-expand {
+                display: none;
+            }
+
+            &:focus, &:hover {
+                background-color: var(--input-background-hover);
+                border: var(--input-border-hover);
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+
+            option {
+                color: #000;
+            }
+        }
+
+        .select-arrow {
+            position: absolute;
+            bottom: 6px;
+            right: 0px;
+            width: 28px;
+            height: 24px;
+            fill: var(--action-alt);
+            pointer-events: none;
+        }
+    }
+}

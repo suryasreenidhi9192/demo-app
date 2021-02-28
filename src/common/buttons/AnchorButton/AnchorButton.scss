@@ -1,0 +1,30 @@
+@import "../../shared/css/variables";
+
+.anchor-button {
+
+    font-family: $reg;
+    color: var(--action);
+    cursor: pointer;
+    user-select: none;
+
+    &:focus, &:hover {
+        text-decoration: underline;
+        color: var(--action-hover);
+    }
+
+    &:active {
+        color: var(--action-active);
+    }
+
+    &.underline {
+        text-decoration: underline;
+    }
+
+    &.disabled {
+        opacity: 0.5;
+        text-decoration: none;
+        pointer-events: none;
+     }
+
+}
+

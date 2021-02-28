@@ -1,0 +1,98 @@
+@import "../../shared/css/variables";
+
+.checkbox {
+
+    > ol {
+
+        display: flex;
+        cursor: pointer;
+
+        li {
+
+            color: var(--text-muted);
+
+            &:nth-child(1) {
+                flex: 0 0 24px;
+                height: 24px; width: 24px;
+                border: var(--input-border); border-radius: 4px;
+                background-color: var(--input-background);
+            }
+
+            &:nth-child(2) {
+                flex: 1 1 auto;
+                padding-left: 8px; padding-right: 8px; margin-top: 2px;
+            }
+
+        }
+
+    }
+
+    &.disabled {
+
+        > ol li {
+
+            opacity: 0.8;
+
+            &:nth-child(1) {
+                background-color: var(--content-background);
+            }
+
+        }
+
+    }
+
+    &.sel, &.group-sel {
+
+        > ol {
+
+            li {
+
+                color: var(--action);
+
+                &:nth-child(1) {
+
+                    background-color: var(--action);
+                    border-color: var(--border);
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        margin-left: 9px; margin-top: 3px;
+                        width: 4px; height: 12px;
+                        border: solid #fff; border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.disabled {
+
+            > ol li {
+                opacity: 0.8;
+            }
+
+        }
+
+    }
+
+}
+
+.empty-checkbox {
+    padding-bottom: 0 !important;
+}
+
+.checkboxes {
+
+    display: flex; flex-wrap: wrap;
+    padding: 8px;
+
+    .checkbox, .empty-checkbox {
+        flex: 1 1 400px;
+        margin-right: 24px; padding-bottom: 24px;
+    }
+
+}

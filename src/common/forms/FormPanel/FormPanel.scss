@@ -1,0 +1,20 @@
+@import "../../shared/css/variables";
+
+.form-panel {
+
+    position: relative;
+    margin: 16px 0; padding: 16px;
+    background-color: var(--form-background);
+    border: var(--border);
+    border-radius: 4px;
+
+    legend {
+
+        font-size: 20px; font-family: $lt; color: var(--text-muted);
+        &:empty {
+            display: none;
+        }
+
+    }
+
+}

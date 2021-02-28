@@ -1,0 +1,34 @@
+@import "../../shared/css/variables";
+
+.percentage-bars {
+    width: 100%;
+
+    .title {
+        margin-bottom: 6px;
+        color: var(--text);
+    }
+
+    .bar-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        color: var(--text-muted);
+
+        .bar {
+            margin-right: 8px;
+            height: 12px;
+            border-radius: 8px;
+            background-color: var(--text);
+        }
+
+        a.value {
+            text-decoration: underline;
+        }
+
+        .percentage {
+            margin-left: 8px;
+        }
+    }
+
+
+}

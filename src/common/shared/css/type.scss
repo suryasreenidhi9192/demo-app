@@ -1,0 +1,100 @@
+@import "variables/index";
+
+@font-face { font-family: $lt; src: url($lt-src); }
+@font-face { font-family: $lt-ital; src: url( $lt-ital-src); }
+@font-face { font-family: $reg; src: url( $reg-src); }
+@font-face { font-family: $reg-ital; src: url( $reg-ital-src); }
+@font-face { font-family: $med; src: url( $med-src); }
+@font-face { font-family: $med-ital; src: url( $med-ital-src); }
+@font-face { font-family: $bold; src: url( $bold-src); }
+@font-face { font-family: $bold-ital; src: url( $bold-ital-src); }
+
+.font-lt        { font-family: $lt; }
+.font-lt-ital   { font-family: $lt-ital; }
+.font-reg       { font-family: $reg; }
+.font-reg-ital  { font-family: $reg-ital; }
+.font-med       { font-family: $med; }
+.font-med-ital  { font-family: $med-ital; }
+.font-bold      { font-family: $bold; }
+.font-bold-ital { font-family: $bold-ital; }
+
+* {
+    font-family: $default-family; font-style: normal; font-weight: normal;
+}
+
+html, body  {
+    font-size: 16px; line-height: 1.42857143; color: var(--text);
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 { font-family: $lt; }
+h5, .h5 { font-family: $reg; } // MDL uses Rubik Medium
+
+b { font-family: $bold; font-weight: normal; }
+i { font-family: $reg-ital; }
+
+h1, .h1 { font-size: 32px; line-height: 1.5; padding: 0; clear: both; }
+h2, .h2 { font-size: 28px; line-height: 1.6; padding: 0; clear: both; }
+h3, .h3 { font-size: 24px; line-height: 1.7; padding: 0; clear: both; }
+h4, .h4 { font-size: 20px; line-height: 1.8; padding: 0; clear: both; }
+h5, .h5 { font-size: 16px; line-height: 1.9; padding: 0; clear: both; }
+
+a {
+    &,
+    &:visited   { color: var(--action); }
+    &:active    { color: var(--action-active); }
+    &:hover     { color: var(--action-hover); }
+    &.secondary, &.secondary:visited { color: var(--action-alt);}
+    &.secondary:active  { color: var(--action-alt-active); }
+    &.secondary:hover   { color: var(--action-alt-hover); }
+}
+
+p { font-family: $reg; font-size: 16px; line-height: 1.5; }
+
+hr {
+    margin-top: 20px; margin-bottom: 20px;
+    border: 0; border-bottom: var(--border);
+    clear: both; float: none;
+
+    &.compact {
+        margin-top: 10px; margin-bottom: 10px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+    }
+}
+
+br:after, .cfx:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.disclaimer {
+    font-size: 12px; color: var(--text-muted);
+    padding-top: 16px;
+}
+
+// for CMS content
+.neutralize {
+    * {
+        font-family: $reg !important; font-size: 14px !important; font-weight: normal !important; color: var(--text) !important;
+        height: reset !important; width: auto !important;
+        border: 0px !important; background: none !important;
+        text-align: left !important;
+    }
+    img, svg { display: none; }
+}
+
+.obfuscated {
+    filter: blur(10px);
+    transform: rotateX(180deg);
+}

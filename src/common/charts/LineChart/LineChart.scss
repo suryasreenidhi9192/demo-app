@@ -1,0 +1,130 @@
+@import "../../shared/css/variables";
+
+$hidden-opacity: 0.15;
+
+.line-chart {
+    user-select: none;
+    -moz-user-select: none;
+
+    .data-line {
+        fill: none;
+        stroke-linecap: round;
+
+        .line {
+            stroke: var(--text);
+        }
+
+
+        .data-point-selector {
+
+            .data-point-stroke {
+                fill: var(--content-background);
+            }
+
+            .data-point {
+                fill: var(--text);
+            }
+
+            .hover-text {
+                fill: var(--text);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .hover-text-background {
+                opacity: 0;
+                fill: var(--content-background);
+                transition: opacity 0.3s ease;
+            }
+
+            &.has-callback {
+
+                .hitbox {
+                    cursor: pointer;
+                }
+
+                &:hover .data-point {
+                    fill: var(--text);
+                }
+            }
+
+            &.has-hover-text {
+
+                &:hover .hover-text,
+                &:hover .hover-text-background {
+                    opacity: 1;
+                    transition: opacity 0.1s ease;
+                }
+
+                &:hover .data-point {
+                    fill: var(--text) !important;
+                }
+            }
+
+            .hover-text,
+            .hover-text-background {
+                pointer-events: none;
+            }
+        }
+
+        &.is-inactive {
+
+            .line {
+                opacity: $hidden-opacity;
+            }
+
+            .data-point-selector {
+                pointer-events: none;
+
+                .data-point {
+                    opacity: $hidden-opacity;
+                }
+            }
+        }
+    }
+
+    .axis {
+        fill: none;
+        stroke: var(--text-faint);
+        stroke-width: 0.5px;
+    }
+
+    .horizontal-guide,
+    .vertical-guide {
+        fill: none;
+        stroke: var(--text-faint);
+        stroke-width: 0.5px;
+    }
+
+    .threshold {
+        &:not(.is-striped) rect {
+            fill: var(--text-faint)
+        }
+
+        &.is-striped {
+            pattern > path {
+                stroke: var(--text-faint)
+            }
+        }
+    }
+
+    .top-legend-color {
+        stroke: var(--text-faint);
+        stroke-width: 0.5px;
+    }
+
+    .label-left,
+    .top-legend-text {
+        fill: var(--text);
+    }
+
+    .top-legend-line,
+    .line.no-data {
+        stroke: var(--text-faint) !important;
+        stroke-linecap: round;
+    }
+
+    .label-bottom {
+        fill: var(--text);
+    }
+}

@@ -1,0 +1,14 @@
+@import "../../shared/css/variables";
+
+.form-field {
+
+    margin-top: 16px;
+    &:empty {
+        margin-top: 0;
+    }
+
+}
+
+.form select option {
+    color: #000;
+}

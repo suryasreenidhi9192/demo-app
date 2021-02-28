@@ -1,0 +1,90 @@
+@import "../../shared/css/variables";
+
+.table-basic {
+    margin-top: 16px;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-near);
+
+    .scroll-wrapper {
+        width: 100%;
+        overflow: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    tr:hover > td {
+        background-color: var(--action-alt-highlight);
+        color: var(--text);
+    }
+
+    th {
+        padding: 16px;
+        font-family: $med;
+        font-size: 14px;
+        text-transform: capitalize;
+        min-width: 100px;
+        background-color: var(--content-header-background);
+        border-bottom: var(--border);
+        border-right: var(--border);
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    td {
+        padding: 12px 16px;
+        background-color: var(--content-background);
+        border-bottom: var(--border);
+        border-right: var(--border);
+        color: var(--text-muted);
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &.code,
+        &.date,
+        &.string-numeric {
+            text-align: center;
+        }
+
+        &.currency,
+        &.number {
+            text-align: right;
+
+            &.negative {
+                color: var(--utility-red);
+            }
+        }
+
+        &.hyperlink {
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        &.long-string {
+            min-width: 180px;
+            font-size: 15px;
+        }
+
+        a {
+            display: inline-block;
+            margin: -8px;
+            padding: 8px;
+            text-decoration: underline;
+        }
+    }
+
+    tr:last-child > td {
+        border-bottom: none;
+    }
+
+}

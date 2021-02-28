@@ -1,0 +1,39 @@
+@import "../../shared/css/variables";
+
+.table {
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-near);
+
+    .scroll-wrapper {
+        max-height: calc(100vh - 80px);
+        width: 100%;
+        overflow: auto;
+
+        @media (min-height: 768px) {
+            max-height: calc(100vh - 300px);
+        }
+
+        table {
+
+            position: relative;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+
+            th, td {
+
+                &.currency,
+                &.number {
+                    padding-right: 15px !important;
+                    text-align: right;
+                }
+
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,82 @@
+@import "../../shared/css/variables";
+
+.list-menu {
+
+    dl {
+        margin-bottom: 8px;
+        padding: 16px;
+        border-left: 2px solid var(--text-faint);
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .label { font-size: 16px; }
+
+        .value { font-size: 14px; color: var(--text-muted) }
+
+        &:hover {
+            border-color: var(--action-hover);
+            background-color: var(--action-highlight);
+        }
+
+        &:active {
+            border-color: var(--action-active);
+        }
+
+    }
+
+
+    ol {
+
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        margin-bottom: 8px;
+        border-left: 2px solid var(--text-faint);
+
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .label {
+            flex: 0 1 auto;
+            color: var(--text-muted);
+        }
+
+        .spacer {
+            flex: 1 0 40px;
+            align-self: flex-end;
+            border-bottom: 1px dotted var(--text-faint);
+            margin: 0 8px 6px;
+        }
+
+        .value {
+            flex: 0 0 auto;
+            font-family: $reg; text-transform: capitalize; text-align: right;
+        }
+
+        &:hover {
+            border-color: var(--action-hover);
+            background-color: var(--action-highlight);
+
+            .label { color: var(--text); }
+
+            .spacer { border-color: var(--text-muted); }
+        }
+
+        &:active {
+            border-color: var(--action-active);
+        }
+
+    }
+
+
+
+}
+

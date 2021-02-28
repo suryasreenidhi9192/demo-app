@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader:.......................SnapShot Testing: Loader Doesn't appear if content loaded 1`] = `null`;
+
+exports[`Loader:.......................SnapShot Testing: Loader Matches jest snapshot 1`] = `
+<div
+  className="loader"
+>
+  <div
+    className="loader-inline"
+  >
+    <div
+      className="loading-box"
+    >
+      <div
+        className="spinner"
+      />
+      <div
+        className="message"
+      >
+        loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;

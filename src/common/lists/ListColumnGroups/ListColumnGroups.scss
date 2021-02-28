@@ -1,0 +1,36 @@
+@import "../../shared/css/variables";
+
+.list-two-column-groups {
+
+    display: flex; flex-direction: row; flex-wrap: wrap;
+
+    > li {
+
+        flex: 1 1 auto;
+        max-width: 480px;
+        margin-right: 60px;
+
+        dl {
+            display: flex;
+            margin-bottom: 16px;
+            dt {
+                flex: 0 0 auto;
+                font-family: $med; font-size: 14px; text-transform: capitalize;
+            }
+            dd {
+                flex: 1 1 auto;
+                text-align: right;
+                margin-left: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            flex: 0 0 100%;
+            margin-right: 0; margin-bottom: 16px;
+            border-bottom: var(--border);
+        }
+
+    }
+
+}
+

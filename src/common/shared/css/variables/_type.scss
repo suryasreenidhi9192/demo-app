@@ -1,0 +1,23 @@
+
+$lt: Rubik-Light !default;
+$lt-ital: Rubik-Light-Italic !default;
+$reg: Rubik-Regular !default;
+$reg-ital: Rubik-Regular-Italic !default;
+$med: Rubik-Medium !default;
+$med-ital: Rubik-Medium-Italic !default;
+$bold: Rubik-Bold !default;
+$bold-ital: Rubik-Bold-Italic !default;
+
+$font-base-url: '/fonts/' !default;
+
+$lt-src: ($font-base-url + 'rubik-v4-latin-300.woff') !default;
+$lt-ital-src: ($font-base-url + 'rubik-v4-latin-300italic.woff') !default;
+$reg-src: ($font-base-url + 'rubik-v4-latin-regular.woff') !default;
+$reg-ital-src: ($font-base-url + 'rubik-v4-latin-italic.woff') !default;
+$med-src: ($font-base-url + 'rubik-v4-latin-500.woff') !default;
+$med-ital-src: ($font-base-url + 'rubik-v4-latin-500italic.woff') !default;
+$bold-src: ($font-base-url + 'rubik-v4-latin-700.woff') !default;
+$bold-ital-src: ($font-base-url + 'rubik-v4-latin-700italic.woff') !default;
+
+$default-family: $reg, Helvetica, Arial, sans-serif !default;
+

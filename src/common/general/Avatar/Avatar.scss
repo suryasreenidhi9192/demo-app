@@ -1,0 +1,14 @@
+@import "../../shared/css/variables";
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-family: $med;
+    font-size: 18px;
+    color: var(--text);
+    text-align: center;
+    background: var(--content-background);
+    border-radius: 50%;
+    user-select: none;
+}

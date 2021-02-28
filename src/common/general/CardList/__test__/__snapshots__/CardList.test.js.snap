@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardList:.......................SnapShot Testing: CardList Matches jest snapshot 1`] = `
+<ul
+  className="card-list"
+>
+  <li
+    className="card"
+  >
+    <div
+      className="header"
+    >
+      header 1
+    </div>
+    <div
+      className="body"
+    >
+      body 1
+    </div>
+  </li>
+  <li
+    className="card"
+  >
+    <div
+      className="header"
+    >
+      header 2
+    </div>
+    <div
+      className="body"
+    >
+      body 2
+    </div>
+  </li>
+  <li
+    className="card empty-card"
+  />
+  <li
+    className="card empty-card"
+  />
+  <li
+    className="card empty-card"
+  />
+</ul>
+`;
+
+exports[`CardList:.......................SnapShot Testing: Empty CardList Matches jest snapshot 1`] = `
+<ul
+  className="card-list"
+>
+  <li
+    className="card empty-card"
+  />
+  <li
+    className="card empty-card"
+  />
+  <li
+    className="card empty-card"
+  />
+</ul>
+`;

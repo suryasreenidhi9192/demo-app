@@ -1,0 +1,24 @@
+@import "../../../shared/css/variables";
+
+.textarea {
+
+    &.disabled {
+        .description {
+            opacity: .4;
+        }
+    }
+
+    &.err {
+
+        .message {
+            display: block;
+            font-family: $reg; font-size: 14px; color: var(--utility-red);
+            width: auto;
+            margin-top: 8px;
+            text-align: right;
+            &:empty { display: none; }
+        }
+
+    }
+
+}

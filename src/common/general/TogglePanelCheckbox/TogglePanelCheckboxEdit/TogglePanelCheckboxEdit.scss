@@ -1,0 +1,20 @@
+@import "../../../shared/css/variables";
+
+.toggle-panel-edit {
+
+    .group-check {
+
+        border-bottom: var(--border);
+        padding: 16px 0 16px 8px;
+
+    }
+
+    .toggle-panel-checkboxes {
+
+        margin-top: 16px;
+
+        .search-hidden { display: none; }
+
+    }
+
+}

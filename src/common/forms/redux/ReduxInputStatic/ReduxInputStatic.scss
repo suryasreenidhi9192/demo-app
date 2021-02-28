@@ -1,0 +1,14 @@
+@import "../../../shared/css/variables";
+
+.input-static {
+
+    .value {
+        display: table-cell;
+        font-size: 14px;
+        height: 48px;
+        vertical-align: middle;
+        border: 1px solid transparent;
+    }
+
+}
+

@@ -1,0 +1,18 @@
+@import "../../shared/css/variables";
+
+.list-vertical {
+
+    .item {
+
+        margin-bottom: 16px;
+        padding-left: 16px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        dt { font-family: $med; font-size: 14px; color: var(--text-muted); text-transform: capitalize; }
+
+    }
+
+}

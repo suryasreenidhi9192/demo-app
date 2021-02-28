@@ -1,0 +1,106 @@
+@import "../../../shared/css/variables";
+
+.table .table-footer {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+    padding: 0 16px;
+    background-color: var(--content-footer-background);
+    border-top: var(--border);
+
+    .total-results,
+    .page-controls {
+        font-size: 16px;
+        color: var(--text-muted);
+
+        .count {
+            vertical-align: middle;
+            color: var(--text);
+        }
+        .count-label {
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    }
+
+    .page-controls {
+        margin-right: -12px;
+        user-select: none;
+    }
+
+    .page-control {
+        display: inline-flex;
+        vertical-align: middle;
+        margin: -8px -4px;
+        padding: 8px;
+        cursor: pointer;
+
+        & > svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--action-alt);
+            pointer-events: none;
+        }
+
+        &.prev > svg {
+            transform: rotate(90deg);
+        }
+
+        &.next > svg {
+            transform: rotate(270deg);
+        }
+
+        &:hover > svg {
+            fill: var(--action-alt-hover);
+        }
+
+        &:active {
+            fill: var(--action-alt-active);
+        }
+    }
+
+    .prev-disabled > .prev,
+    .next-disabled > .next {
+        cursor: not-allowed;
+
+        svg {
+            fill: var(--text-faint);
+        }
+
+        &:hover {
+            fill: var(--text-faint);
+        }
+    }
+
+    input {
+        box-sizing: border-box;
+        vertical-align: middle;
+        margin: 0 2px;
+        padding: 4px;
+        text-align: center;
+        background-color: var(--input-background);
+        border: var(--input-border);
+        border-radius: 4px;
+        font-size: 16px;
+        color: var(--text);
+
+        &:focus, &:hover {
+            background-color: var(--input-background-hover);
+            border: var(--input-border-hover);
+            outline: none;
+        }
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        &[type=number] {
+        -moz-appearance: textfield;
+        }
+    }
+}

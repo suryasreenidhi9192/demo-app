@@ -1,0 +1,53 @@
+@import "../../shared/css/variables";
+
+.toggle-tabs {
+    position: relative;
+    display: flex;
+    width: max-content;
+    border-radius: 8px;
+    border: var(--input-border);
+    background-color: var(--content-header-background);
+
+    .toggle-tab {
+        position: relative;
+        padding: 8px 24px;
+        font-family: $med;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--action-alt);
+        text-align: center;
+        border-radius: 8px;
+        white-space: nowrap;
+        z-index: 1;
+        user-select: none;
+        -moz-user-select: none;
+        cursor: pointer;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--action-alt-hover);
+        }
+
+        &:active {
+            color: var(--action-alt-active);
+        }
+
+        &.is-selected {
+            color: #fff;
+            pointer-events: none;
+        }
+    }
+
+    .selection-indicator {
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        height: 36px;
+        background-image: linear-gradient(rgba(black, 0), rgba(black, .2));
+        background-color: var(--action);
+        border: 1px solid var(--action);
+        border-radius: 6px;
+        z-index: 0;
+        transition: left 0.2s ease;
+    }
+}

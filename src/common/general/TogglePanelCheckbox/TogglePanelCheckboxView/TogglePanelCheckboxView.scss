@@ -1,0 +1,25 @@
+.toggle-panel-view {
+
+    margin-top: 8px;
+
+    ul {
+
+        margin: 16px 0 0 16px;
+        columns: 3;
+
+        li {
+
+            margin-bottom: 8px;
+
+            &::before {
+                content: "\2022";
+                color: #c9c9c9;
+                display: inline-block;
+                margin-right: 8px;
+            }
+
+        }
+
+    }
+
+}

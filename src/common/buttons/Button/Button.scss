@@ -1,0 +1,77 @@
+@import "../../shared/css/variables";
+
+.form-button {
+    width: 100%;
+    min-width: 180px;
+    height: 48px;
+    padding: 0 24px;
+    font-family: $reg;
+    font-size: 18px;
+    color: var(--text);
+    text-align: center;
+    border: 1px solid var(--action);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-none);
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+
+    &.small {
+        margin-top: 12px;
+        width: 100%;
+        min-width: 120px;
+        height: 36px;
+        padding: 0 16px;
+        font-size: 15px;
+    }
+
+    &.primary {
+        background-image: linear-gradient(rgba(black, 0), rgba(black, 0.2));
+        color: var(--button-text);
+        background-color: var(--action);
+        transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, border 0.3s;
+
+        &:focus, &:hover {
+            background-color: var(--action-hover);
+            border: solid 1px var(--action-hover);
+            box-shadow: var(--box-shadow-far);
+        }
+
+        &:active {
+            background-color: var(--action-active);
+            box-shadow: var(--box-shadow-none);
+            border: solid 1px var(--action-active);
+            transition: background-color 0.05s, box-shadow 0.05s, color 0.05s, border 0.05s;
+        }
+
+    }
+
+    &.secondary {
+        color: var(--action);
+        background: var(--content-background);
+        background-image: linear-gradient(rgba(black, 0), rgba(black, .1));
+        transition: box-shadow 0.3s, color 0.3s, border 0.3s;
+
+        &:focus, &:hover {
+            color: var(--action-hover);
+            border: solid 1px var(--action-hover);
+            box-shadow: var(--box-shadow-far);
+        }
+
+        &:active {
+            color: var(--action-active);
+            box-shadow: var(--box-shadow-none);
+            border: solid 1px var(--action-active);
+            transition: box-shadow 0.05s, color 0.05s, border 0.05s;
+        }
+    }
+
+    &.disabled {
+        box-shadow: none;
+        pointer-events: none;
+        opacity: .5;
+    }
+
+}
+
+

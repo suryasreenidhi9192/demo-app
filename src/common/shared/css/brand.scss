@@ -1,0 +1,144 @@
+body {
+
+    --brand: 205;
+
+    &[data-theme="dark"] {
+
+        --app-logo: url('/images/logo_dark.svg');
+        --stripes: url('/images/stripes_dark.svg');
+
+        // Backgrounds
+
+        --app-background: hsl(225, 8%, 22%);
+        --app-header-background: hsl(225, 8%, 15%);
+        --app-footer-background: hsl(225, 8%, 15%);
+
+        --content-background: hsl(225, 8%, 18%);
+        --content-header-background: hsl(225, 8%, 15%);
+        --content-footer-background: hsl(225, 8%, 15%);
+
+        --overlay-background: hsla(225, 8%, 8%, 0.5); // Overlay that appears behind modals and popups
+
+        // Text
+
+        --text: hsl(225, 8%, 92%);           // General text color for headers/content
+        --text-muted: hsl(225, 8%, 64%);     // Secondary text
+        --text-faint: hsl(225, 8%, 32%);     // Disabled text
+        --button-text: #fff;                 // Text on buttons, toggles, etc. with --action backgrounds
+
+        // Actionable Items
+
+        --action: hsl(var(--brand), 90%, 60%);             // Links, buttons, and selected item indication
+        --action-active: hsl(var(--brand), 90%, 64%);
+        --action-hover: hsl(var(--brand), 90%, 56%);
+        --action-highlight: hsl(var(--brand), 40%, 24%);   // Hover background for menu items, accordions, etc.
+
+        --action-alt: hsl(225, 8%, 72%);           // Alternate colors for clickable tabs, toggles, menus, headers
+        --action-alt-active: hsl(225, 8%, 80%);
+        --action-alt-hover: hsl(225, 8%, 64%);
+        --action-alt-highlight: hsl(225, 8%, 20%); // Alt hover background formenu items, accordions, etc.
+
+        --menu-action: hsl(225, 8%, 92%);          // Links on headers & menus
+        --menu-action-active: hsl(225, 8%, 100%);
+        --menu-action-hover: hsl(225, 8%, 80%);
+
+        // Borders
+
+        --border-color: rgba(0, 0, 0, 0.3);
+        --border: 1px solid var(--border-color);
+
+        // Shadows
+
+        --box-shadow-far: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.15);
+        --box-shadow-near: 0 1px 3px rgba(0,0,0,0.1), 2px 3px 4px rgba(0,0,0,0.15);
+        --box-shadow-none: 0px 0px 0px hsla(0, 0%, 0%, 0);
+
+        // Forms
+
+        --form-background: hsl(225, 8%, 18%);
+        --input-background: hsla(225, 8%, 0%, 0.15);
+        --input-background-hover: hsla(225, 8%, 0%, 0.25);
+        --input-border: 1px solid hsl(225, 8%, 50%);
+        --input-border-hover: 1px solid hsl(var(--brand), 90%, 56%);
+
+        // Utility Colors
+
+        --utility-amber: hsl(57, 84%, 78%); // Warning
+        --utility-blue: hsl(199, 99%, 55%);  // Info
+        --utility-gray: hsl(0, 0%, 60%);     // None or N/A
+        --utility-green: hsl(110, 53%, 69%); // Success or positive outcomes
+        --utility-red: hsl(359, 100%, 77%);   // Error or negative outcomes
+    }
+
+    &[data-theme="light"] {
+
+        --app-logo: url('/images/logo_light.svg');
+        --stripes: url('/images/stripes_light.svg');
+
+        // Backgrounds
+
+        --app-background: hsl(225, 8%, 92%);
+        --app-header-background: hsl(var(--brand), 90%, 36%);
+        --app-footer-background: hsl(225, 8%, 90%);
+
+        --content-background: hsl(225, 8%, 100%);
+        --content-header-background: hsl(225, 8%, 96%);
+        --content-footer-background: hsl(225, 8%, 96%);
+
+        --overlay-background: rgba(0, 0, 0, 0.5); // Overlay that appears behind modals and popups
+
+        // Text
+
+        --text: hsl(225, 8%, 8%);            // General text color for headers/content
+        --text-muted: hsl(225, 8%, 40%);     // Secondary text
+        --text-faint: hsl(225, 8%, 80%);     // Disabled text
+        --button-text: #fff;                 // Text on buttons, toggles, etc. with --action backgrounds
+
+        // Actionable Items
+
+        --action: hsl(var(--brand), 90%, 40%);             // Links, buttons, and selected item indication
+        --action-active: hsl(var(--brand), 90%, 36%);
+        --action-hover: hsl(var(--brand), 90%, 44%);
+        --action-highlight: hsl(var(--brand), 90%, 95%);   // Hover background for menu items, accordions, etc.
+
+        --action-alt: hsl(225, 8%, 56%);           // Alternate colors for clickable tabs, toggles, menus, headers
+        --action-alt-active: hsl(225, 8%, 64%);
+        --action-alt-hover: hsl(225, 8%, 48%);
+        --action-alt-highlight: hsl(225, 8%, 94%); // Alt hover background formenu items, accordions, etc.
+
+        --menu-action: hsl(225, 8%, 96%);          // Links on headers & menus
+        --menu-action-active: hsl(225, 8%, 92%);
+        --menu-action-hover: hsl(225, 8%, 100%);
+
+        // Borders
+
+        --border-color: rgba(0, 0, 0, 0.2);
+        --border: 1px solid var(--border-color);
+
+        // Shadows
+
+        --box-shadow-far: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.15);
+        --box-shadow-near: 0 1px 3px rgba(0,0,0,0.1), 2px 3px 4px rgba(0,0,0,0.15);
+        --box-shadow-none: 0px 0px 0px hsla(0, 0%, 0%, 0);
+
+        // Forms
+
+        --form-background: hsl(225, 8%, 96%);
+        --input-background: hsla(225, 8%, 100%, 0.5);
+        --input-background-hover: hsla(225, 8%, 100%, 1);
+        --input-border: 1px solid hsl(225, 8%, 64%);
+        --input-border-hover: 1px solid hsl(var(--brand), 90%, 40%);
+
+        // Utility Colors
+
+        --utility-amber: hsl(35, 100%, 60%); // Warning
+        --utility-blue: hsl(200, 90%, 56%);  // Info
+        --utility-gray: hsl(0, 0%, 60%);     // None or N/A
+        --utility-green: hsl(110, 70%, 56%); // Success or positive outcomes
+        --utility-red: hsl(359, 80%, 70%);   // Error or negative outcomes
+
+    }
+
+    background-color: var(--background-body);
+
+}
